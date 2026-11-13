@@ -1,0 +1,95 @@
+{
+  "projeto": "Haikai Machine",
+  "idioma": "pt-BR",
+  "versao": "1.0",
+  "pastas": [
+    {
+      "id": "pasta-1",
+      "titulo": "Pasta 1: O que é Haikai e o olhar fotográfico",
+      "resumo": "A essência do haikai como captura imediata do instante presente, sem julgamentos ou excessos.",
+      "conteudo": "O haikai é uma forma poética breve nascida no Japão que busca registrar o instante exato em que algo acontece diante dos olhos do observador. Diferente da poesia ocidental tradicional, muitas vezes carregada de metáforas complexas, subjetividade intensa ou reflexões filosóficas abstratas, o haikai funciona como uma máquina fotográfica de palavras. Ao sair de casa para caminhar, viajar ou trabalhar, o poeta torna-se um observador atento aos pequenos acontecimentos do cotidiano: o reflexo do sol em uma poça d'água, o pouso rápido de um pássaro no fio elétrico ou o som do vento entre as folhas. Haikalizar significa capturar essa cena com objetividade, simplicidade e frescor, permitindo que o próprio leitor reviva a sensação do momento sem que o autor precise explicar o que sentiu. A imagem fala por si mesma, revelando a beleza oculta nas coisas mais comuns.",
+      "exemplos": [
+        {
+          "versos": [
+            "Chuva na calçada —",
+            "um pardal sacode as asas",
+            "e leva o céu junto."
+          ],
+          "comentario": "Registro direto de uma cena urbana após a chuva, sem adjetivos excessivos."
+        }
+      ]
+    },
+    {
+      "id": "pasta-2",
+      "titulo": "Pasta 2: Métrica 5-7-5 e Sílabas Poéticas em Português",
+      "resumo": "Como funciona a estrutura clássica de 17 sílabas e as regras de escanção na língua portuguesa.",
+      "conteudo": "Tradicionalmente, o haikai é composto por três versos curtos que somam dezessete sílabas poéticas, distribuídas na estrutura de cinco sílabas no primeiro verso, sete no segundo e cinco no terceiro. Na língua portuguesa, essa contagem segue as regras da escanção poética, e não apenas a divisão silábica gramatical do dicionário. A regra fundamental é contar apenas até a última sílaba tônica de cada verso, descartando as sílabas átonas finais. Além disso, ocorre com frequência a sinalefa, que é a fusão sonora entre a vogal final átona de uma palavra e a vogal inicial da palavra seguinte durante a leitura rítmica. Embora muitos poetas contemporâneos utilizem a métrica livre para privilegiar a concisão da imagem, treinar o ouvido no esquema 5-7-5 desenvolve o poder de síntese, obrigando o autor a escolher apenas as palavras indispensáveis para sustentar a cena observada.",
+      "exemplos": [
+        {
+          "versos": [
+            "O ve-lho tan-que (5)",
+            "u-ma rã sal-ta e mer-gu-lha (7)",
+            "ba-ru-lho d'á-gua (5)"
+          ],
+          "comentario": "Adaptação clássica de Matsuo Bashô demonstrando a contagem até a última sílaba tônica."
+        }
+      ]
+    },
+    {
+      "id": "pasta-3",
+      "titulo": "Pasta 3: Kigo — As Palavras de Estação",
+      "resumo": "O elo entre o poema e o ciclo da natureza através de referências sazonais sutis.",
+      "conteudo": "Um dos pilares mais tradicionais do haikai é o kigo, termo japonês que designa uma palavra ou expressão associada diretamente a uma das quatro estações do ano. O uso do kigo situa o poema no tempo e conecta a experiência humana aos ciclos maiores da natureza e do clima. Elementos como ipês floridos, calor abafado, chuvas de verão, folhas secas no chão, neblina matinal ou vento frio funcionam como âncoras sensoriais imediatas para quem lê. Mesmo em ambientes urbanos ou durante deslocamentos diários pela cidade, o olhar treinado percebe as marcas da estação na luz da tarde, nas roupas dos transeuntes ou nas árvores das praças. Ao incluir um kigo de maneira natural, o autor economiza explicações e desperta na memória do leitor toda a atmosfera térmica, sonora e visual daquela época do ano.",
+      "exemplos": [
+        {
+          "versos": [
+            "Vento de outono —",
+            "folhas secas atravessam",
+            "a faixa de pedestres."
+          ],
+          "comentario": "O 'vento de outono' e as 'folhas secas' situam imediatamente a estação no cenário urbano."
+        }
+      ]
+    },
+    {
+      "id": "pasta-4",
+      "titulo": "Pasta 4: Kireji — O Corte Poético",
+      "resumo": "A pausa rítmica e o contraste entre duas imagens que geram o impacto do haikai.",
+      "conteudo": "O kireji, traduzido como palavra de corte, é o recurso responsável por dividir o haikai em duas partes que dialogam entre si, criando uma pausa respiratória e um pequeno choque de percepção. Na língua portuguesa, esse corte costuma ser representado por sinais de pontuação como o travessão, os dois-pontos, as reticências ou simplesmente pela quebra natural entre o primeiro e o segundo verso, ou entre o segundo e o terceiro. A função do corte é justapor duas imagens distintas: a primeira apresenta o cenário amplo ou o contexto geral, enquanto a segunda revela um detalhe súbito, um movimento inesperado ou um contraste silencioso. É exatamente nesse intervalo entre as duas imagens que nasce a centelha poética do haikai, convidando o leitor a preencher o espaço em branco com sua própria percepção.",
+      "exemplos": [
+        {
+          "versos": [
+            "Estação lotada —",
+            "no vão do trilho vazio",
+            "nasce uma flor branca."
+          ],
+          "comentario": "O travessão no primeiro verso separa o tumulto urbano da delicadeza silenciosa nos trilhos."
+        }
+      ]
+    },
+    {
+      "id": "pasta-5",
+      "titulo": "Pasta 5: Mestres do Haikai e Exemplos Comentados",
+      "resumo": "Lições práticas dos grandes mestres japoneses e brasileiros para inspirar seus registros.",
+      "conteudo": "Para dominar a arte de haikalizar durante suas caminhadas e viagens, vale observar como grandes mestres transformaram cenas simples em registros eternos. No Japão, Matsuo Bashô elevou o haikai ao caminhar por estradas rurais e anotar suas impressões de viagem em cadernos, valorizando a solidão serena e a impermanência. Yosa Buson trouxe um olhar pictórico, quase cinematográfico, destacando cores e luzes, enquanto Kobayashi Issa deu voz às pequenas criaturas, como insetos e pardais, com ternura e humor. No Brasil, nomes como Guilherme de Almeida, Paulo Leminski e Alice Ruiz adaptaram o gênero à paisagem tropical e ao ritmo da língua portuguesa. O segredo comum a todos eles é a humildade diante do real: em vez de inventar grandes frases, saia com atenção plena, observe o mundo ao redor e registre o que viu.",
+      "exemplos": [
+        {
+          "versos": [
+            "Um mundo de orvalho",
+            "é um mundo de orvalho —",
+            "e, no entanto..."
+          ],
+          "comentario": "Clássico de Kobayashi Issa sobre a fragilidade e a beleza transitória da vida."
+        },
+        {
+          "versos": [
+            "Pelos caminhos",
+            "onde nunca ninguém vai,",
+            "flores silvestres."
+          ],
+          "comentario": "Exemplo de observação pura durante uma caminhada fora das rotas habituais."
+        }
+      ]
+    }
+  ]
+}
