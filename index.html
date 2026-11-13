@@ -11,6 +11,10 @@
   <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
   <link rel="apple-touch-icon" href="icon-192.png">
   <script>
+    /* Guarda o evento de instalação assim que o Chrome/Edge o dispara. */
+    window.addEventListener('beforeinstallprompt', function (e) { e.preventDefault(); window.__bip = e; });
+  </script>
+  <script>
     /* Aplica o tema salvo antes da pintura. Padrão inicial: claro. */
     try {
       var t = localStorage.getItem('haikaiMachine.tema');
@@ -24,12 +28,6 @@
 <!-- Sprite de ícones SVG inline -->
 <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
   <defs>
-    <symbol id="i-logo" viewBox="0 0 48 48">
-      <path d="M8 14h6l3-4h14l3 4h6a4 4 0 0 1 4 4v18a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V18a4 4 0 0 1 4-4z"/>
-      <circle cx="24" cy="27" r="9"/>
-      <path d="M20 23h8M18 27h12M20 31h8"/>
-      <circle cx="38" cy="19" r="1.6" style="fill:var(--accent);stroke:none"/>
-    </symbol>
     <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
     <symbol id="i-maximize" viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2v3M21 8V5a2 2 0 0 0-2-2h-3M3 16v3a2 2 0 0 0 2 2h3M16 21h3a2 2 0 0 0 2-2v-3"/></symbol>
     <symbol id="i-minimize" viewBox="0 0 24 24"><path d="M8 3v3a2 2 0 0 1-2 2H3M21 8h-3a2 2 0 0 1-2-2V3M3 16h3a2 2 0 0 1 2 2v3M16 21v-3a2 2 0 0 1 2-2h3"/></symbol>
@@ -64,12 +62,7 @@
 <div id="splash" class="splash" data-theme="dark" role="img" aria-label="Haikai Machine — carregando">
   <div class="splash-flash"></div>
   <div class="splash-inner">
-    <svg class="splash-logo" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-      <path class="draw" pathLength="1" d="M8 14h6l3-4h14l3 4h6a4 4 0 0 1 4 4v18a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V18a4 4 0 0 1 4-4z"/>
-      <circle class="draw" pathLength="1" cx="24" cy="27" r="9"/>
-      <path class="splash-versos" d="M20 23h8M18 27h12M20 31h8"/>
-      <circle class="splash-dot" cx="38" cy="19" r="1.6"/>
-    </svg>
+    <img class="splash-logo" src="icon-512.png" alt="" width="512" height="512" decoding="async">
     <p class="splash-title" aria-hidden="true">Haikai Machine</p>
     <p class="splash-sub" aria-hidden="true">fotografar com palavras</p>
   </div>
@@ -95,7 +88,7 @@
     </button>
 
     <a class="brand" href="https://magpe-stack.github.io/HaikaiMachine/" aria-label="Haikai Machine — página inicial">
-      <svg class="icon brand-icon" aria-hidden="true" focusable="false"><use href="#i-logo"/></svg>
+      <img class="brand-icon" src="icon-192.png" alt="" width="32" height="32">
       <span class="brand-name">Haikai Machine</span>
     </a>
 
@@ -152,7 +145,7 @@
   <footer class="footer">
     <nav class="footer-nav" aria-label="Links do projeto">
       <a class="footer-btn" href="https://magpe-stack.github.io/HaikaiMachine/" title="Haikai Machine — página inicial" aria-label="Haikai Machine, página inicial do PWA">
-        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-logo"/></svg>
+        <img class="footer-logo" src="icon-192.png" alt="" width="28" height="28">
         <span>PWA</span>
       </a>
       <a class="footer-btn" href="https://github.com/magpe-stack/HaikaiMachine" target="_blank" rel="noopener noreferrer" title="Código no GitHub" aria-label="Repositório do Haikai Machine no GitHub">

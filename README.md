@@ -17,7 +17,8 @@ Progressive Web App (PWA) mobile-first em HTML5, CSS3 e Vanilla JavaScript, sem 
 | `manifest.json` | Manifesto PWA (usa `icon-192.png` e `icon-512.png`) |
 | `sw.js` | Service Worker (cache offline) |
 | `teoria-haikai.json` | Conteúdo da seção Teoria (5 pastas), carregado dinamicamente |
-| `icon-192.png`, `icon-512.png` | Ícones do PWA. **Já existem na raiz do repositório; não estão neste zip.** |
+| `icon-192.png`, `icon-512.png` | Ícones do PWA (obturador). Também usados no cabeçalho, rodapé, splash e início |
+| `icon-maskable-192.png`, `icon-maskable-512.png` | Versões com fundo branco e margem de segurança para ícones adaptativos (Android/Chrome/Edge) |
 
 ## Publicar no GitHub Pages
 
@@ -80,6 +81,10 @@ Além das coordenadas, o app tenta obter um endereço de referência chamando, v
 ## Contador de sílabas poéticas
 
 `contarSilabasPoeticas()` em `app.js` aplica a escanção do português: separação silábica (ditongos, hiatos, dígrafos, encontros consonantais), identificação da sílaba tônica, **sinalefa** entre palavras e contagem **até a última sílaba tônica**. É uma estimativa por regras: casos ambíguos (diérese/sinérese, palavras com tonicidade irregular sem acento) podem divergir da leitura do poeta. Por isso o contador apenas informa e nunca bloqueia.
+
+## Instalação (Chrome e Edge)
+
+O `manifest.json` usa um `id` próprio (`/HaikaiMachine/`). O `id` identifica o app para o navegador e é resolvido a partir da **origem** (`magpe-stack.github.io`), então um `id` genérico como `"./"` colide com qualquer outro PWA da mesma conta no GitHub Pages: o navegador acredita que o app já está instalado e não oferece a instalação. Cada PWA do mesmo domínio precisa de um `id` diferente.
 
 ## Acessibilidade (WCAG 2.1)
 

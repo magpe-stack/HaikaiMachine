@@ -5,7 +5,7 @@
  *  - Demais arquivos do mesmo domínio: stale-while-revalidate.
  *  - Requisições de outros domínios (ex.: endereço reverso) NÃO são interceptadas.
  */
-const VERSAO = 'haikai-machine-v1';
+const VERSAO = 'haikai-machine-v2';
 const ARQUIVOS = [
   './',
   './index.html',
@@ -14,7 +14,9 @@ const ARQUIVOS = [
   './manifest.json',
   './teoria-haikai.json',
   './icon-192.png',
-  './icon-512.png'
+  './icon-512.png',
+  './icon-maskable-192.png',
+  './icon-maskable-512.png'
 ];
 
 self.addEventListener('install', (event) => {

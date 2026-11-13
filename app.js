@@ -685,7 +685,7 @@ function aplicarImportacao() {
 /* =====================================================================
  * Instalação do PWA
  * ===================================================================== */
-let promptInstalacao = null;
+let promptInstalacao = window.__bip || null;
 window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); promptInstalacao = e; });
 window.addEventListener('appinstalled', () => { promptInstalacao = null; toast('Haikai Machine instalado!'); });
 
@@ -751,7 +751,7 @@ function viewHome() {
   const recentes = [...dados.acervos].sort((a, b) => b.criadoEm.localeCompare(a.criadoEm)).slice(0, 3);
   const content = el('div', { class: 'stack' },
     el('section', { class: 'hero' },
-      icon('logo', 'icon hero-logo'),
+      el('img', { class: 'hero-logo', src: 'icon-192.png', alt: '', width: '96', height: '96' }),
       el('h1', { tabindex: '-1', text: 'Haikai Machine' }),
       el('p', { class: 'lead', text: 'A máquina fotográfica de texto.' }),
       el('p', { text: 'Quem tira foto fotografa. Quem faz haikai haikaliza. Saia de casa, observe, e registre o instante com data, hora e lugar.' }),
