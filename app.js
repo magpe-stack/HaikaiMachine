@@ -692,7 +692,14 @@ window.addEventListener('appinstalled', () => { promptInstalacao = null; toast('
 async function instalarApp() {
   if (matchMedia('(display-mode: standalone)').matches) { toast('O app já está instalado e em uso.'); return; }
   if (!promptInstalacao) {
-    toast('A instalação não está disponível agora. No Chrome, abra o menu ⋮ e escolha "Instalar app" (requer HTTPS).');
+    const ua = navigator.userAgent;
+    let msg;
+    if (!window.isSecureContext) msg = 'Instalação indisponível: a página não está em um contexto seguro (HTTPS).';
+    else if (/iPhone|iPad|iPod/.test(ua)) msg = 'No iPhone/iPad, use o Safari: toque em Compartilhar e depois em "Adicionar à Tela de Início".';
+    else if (/; wv\)|FBAN|FBAV|Instagram|Line\//.test(ua)) msg = 'Este navegador embutido não instala apps. Abra o endereço diretamente no Chrome.';
+    else if (!/Chrome\//.test(ua)) msg = 'Abra o endereço no Google Chrome para instalar o app.';
+    else msg = 'O Chrome ainda não liberou a instalação. Se o app já estiver instalado, abra-o pelo ícone. Senão, use o menu ⋮ do Chrome > "Instalar app" ou "Adicionar à tela inicial", ou recarregue a página uma vez e tente de novo.';
+    toast(msg);
     return;
   }
   promptInstalacao.prompt();
